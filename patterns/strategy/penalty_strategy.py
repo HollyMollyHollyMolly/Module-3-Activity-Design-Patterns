@@ -5,7 +5,7 @@ __version__ = "10.15.2025"
 
 from .payment_strategy import PaymentStrategy
 
-class PennaltyStrategy(PaymentStrategy):
+class PenaltyStrategy(PaymentStrategy):
     """Concrete strategy that applies a penalty fee for insufficient payments."""
     def process_payment(self, account, payee, amount: float) -> str:
         account.deduct_balance(payee, amount)

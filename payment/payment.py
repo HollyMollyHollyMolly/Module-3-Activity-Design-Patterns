@@ -8,6 +8,7 @@ from patterns.strategy.payment_strategy import PaymentStrategy
 from payee.payee import Payee
 
 class Payment:
+    """Handles payment processing using a specified strategy."""
     def __init__(self, strategy):
         if isinstance(strategy, PaymentStrategy):
             self.__strategy = strategy

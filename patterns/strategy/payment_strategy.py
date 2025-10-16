@@ -4,12 +4,12 @@ __author__ = "Nguyen Dang Thai Ha"
 __version__ = "10.08.2025"
 
 from abc import ABC, abstractmethod
+from billing_account.billing_account import BillingAccount
 from payee.payee import Payee
 
 class PaymentStrategy(ABC):
     """Abstract base class for payment strategies."""
 
     @abstractmethod
-    def pay(self, amount: float, payee: Payee) -> None:
-        """Process a payment of the specified amount to the given payee."""
+    def process_payment(self, account: BillingAccount, payee: Payee, amount: float) -> str:
         pass

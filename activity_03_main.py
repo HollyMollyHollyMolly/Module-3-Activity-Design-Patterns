@@ -4,7 +4,7 @@ classes.
  
 __author__ = "ACE Faculty"
 __version__ = "1.0.0"
-__credits__ = ""
+__credits__ = "Nguyen Dang Thai Ha"
  
 from billing_account.billing_account import BillingAccount
 from patterns.strategy.partial_payment_strategy import PartialPaymentStrategy

@@ -7,6 +7,7 @@ __credits__ = "Nguyen Dang Thai Ha"
 from enum import Enum
 
 class Payee(Enum):
+    """Enumeration for different types of payees. """
     
     ELECTRICITY = 1
     """The electricity payee."""

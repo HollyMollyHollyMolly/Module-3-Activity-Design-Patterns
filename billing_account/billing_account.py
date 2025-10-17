@@ -8,12 +8,17 @@ from payee.payee import Payee
 
 class BillingAccount():
     """A class to represent a user's balances for various utility bills.
+
+    Attributes:
+        __balances (dict): A dictionary mapping Payee enums to their
     """
 
     def __init__(self):
         """Initializes a new instance of the BillingAccount class.
         
         All balances are initialized to zero.
+
+        Raises: None
         """
         self.__balances = {
             Payee.ELECTRICITY: 0.0,
